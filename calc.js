@@ -1,8 +1,3 @@
-var a=window.prompt("1st#");var b=window.prompt("operator"); var c=window.prompt("2nd#");x=()=>b=="+"?:alert(a+c):b=="-"?alert(a-c):b=="x"||"*"?alert(a*c):b=="/"?alert(a/c):alert("error")
+p=prompt;a=+p`1st#`;b=p`operator`;c=+p`2nd#`;d=i=>b==i;alert(d`+`?a+c:d`-`?a-c:d`x`|d`*`?a*c:d`/`?a/c:'error')
 
-
-//thats the main part dont count the rest :) now is just to get it to run
-
-window.onload = x;
-
-
+// No need for window.onload, since it should be loaded in the header anyways, and there's nothing important in the body. 
